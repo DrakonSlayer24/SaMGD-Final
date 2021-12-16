@@ -1078,6 +1078,7 @@ GameObject:
   - component: {fileID: 496848029}
   - component: {fileID: 496848028}
   - component: {fileID: 496848027}
+  - component: {fileID: 496848030}
   m_Layer: 5
   m_Name: Start Button
   m_TagString: Untagged
@@ -1148,7 +1149,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 496848028}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 496848030}
+        m_TargetAssemblyTypeName: Panel, Assembly-CSharp
+        m_MethodName: StartButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &496848028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1187,6 +1200,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496848025}
   m_CullTransparentMesh: 1
+--- !u!114 &496848030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496848025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4160626965d9a44ab0ff6806e41cc5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CreateRoomPanel: {fileID: 619359676}
+  JoinRoomPanel: {fileID: 652759716}
+  MenuPanel: {fileID: 470073252}
 --- !u!1 &565576595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,7 +2233,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1186913606}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9985136
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2606,6 +2634,7 @@ GameObject:
   - component: {fileID: 1129943631}
   - component: {fileID: 1129943630}
   - component: {fileID: 1129943629}
+  - component: {fileID: 1129943632}
   m_Layer: 5
   m_Name: Start Button
   m_TagString: Untagged
@@ -2677,13 +2706,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1129943627}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1129943632}
+        m_TargetAssemblyTypeName: Panel, Assembly-CSharp
+        m_MethodName: StartButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2727,6 +2756,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129943627}
   m_CullTransparentMesh: 1
+--- !u!114 &1129943632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129943627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4160626965d9a44ab0ff6806e41cc5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CreateRoomPanel: {fileID: 619359676}
+  JoinRoomPanel: {fileID: 652759716}
+  MenuPanel: {fileID: 470073252}
 --- !u!1 &1186913605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,7 +2804,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.9985136}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -31,4 +31,9 @@ public class Panel : MonoBehaviour
         MenuPanel.SetActive(true);
         //SceneManager.LoadScene("Loading");
     }
+
+    public void StartButton()
+    {
+        SceneManager.LoadScene("Arena");
+    }
 }
